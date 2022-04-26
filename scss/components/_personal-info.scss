@@ -1,0 +1,11 @@
+@use '../abstracts/background-info-color' as *;
+
+#personal-info {
+    margin-right: 35px;
+    width: 200px;
+    background-color: $background-info-color;
+}
+
+.profile-info {
+    padding-left: 15px;
+}

@@ -1,0 +1,56 @@
+@use '../abstracts/timeline-color' as *;
+
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+
+    .timeline_body {
+        position: relative;
+        margin-left: 100px;
+        border: 0 8px 8px 0;
+        padding: 5px 0;
+        margin-top: 20px;
+
+        &:after {
+            content: '';
+            width: 4px;
+            height: 55%;
+            position: absolute;
+            background-color: $timeline-color;
+            left: -9px;
+            top: 60px; 
+        }
+
+        .timeline_item {
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 4px solid black;
+                background-color: #fff;
+                position: absolute;
+                left: -16px;
+                top: 0px;
+                z-index: 9;
+            }
+
+            .date {
+                position: absolute;
+                left: -70px;
+                top: -15px;
+            }
+
+            .content {
+                margin: 40px;
+                border: 1px dashed #fff;
+                .title {
+                    font-weight: 500;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

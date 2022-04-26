@@ -1,0 +1,14 @@
+@use '../abstracts/background-info-color' as *;
+
+.detailed-personal-info {
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    background-color: $background-info-color;
+}
+
+.detailed-personal-info {
+    h2 {
+        position: absolute;
+    }
+}
